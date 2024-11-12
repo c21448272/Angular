@@ -1,0 +1,12 @@
+<h2>Task List</h2>
+
+<!-- Add Task Component for adding new tasks -->
+<app-add-task (newTask)="addTask($event)"></app-add-task>
+
+<!-- Display the tasks with *ngFor -->
+<ul>
+  <li *ngFor="let task of tasks">
+    <app-task [task]="task"></app-task> 
+  </li>
+</ul>
+
